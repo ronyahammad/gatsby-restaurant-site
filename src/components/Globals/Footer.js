@@ -38,27 +38,27 @@ img: file(relativePath: { eq: "footer_logo.png" }) {
                             <div className="socail_links">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a >
                                             <i className="ti-facebook"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a >
                                             <i className="ti-twitter-alt"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a >
                                             <i className="fa fa-instagram"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a >
                                             <i class="fa fa-pinterest"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a >
                                             <i className="fa fa-youtube-play"></i>
                                         </a>
                                     </li>
