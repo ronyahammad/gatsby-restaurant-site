@@ -11,21 +11,21 @@ const AboutPage = () => {
       img1: file(relativePath: { eq: "banner/bradcam.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid
           }
         }
     }
     img2: file(relativePath: { eq: "about/about_1.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
   }
   img3: file(relativePath: { eq: "about/about_2.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
   }

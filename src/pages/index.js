@@ -12,7 +12,6 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      
       <Carousel>
         <Carousel.Item>
         <BackgroundPage
@@ -44,18 +43,14 @@ export const query = graphql`
     img1: file(relativePath: { eq: "banner/banner.png" }) {
   childImageSharp {
     fluid {
-      ...GatsbyImageSharpFluid_tracedSVG
+      ...GatsbyImageSharpFluid
     }
   }
 }
-
-  
-  
-
 img2: file(relativePath: { eq: "banner/banner2.png" }) {
   childImageSharp {
     fluid {
-      ...GatsbyImageSharpFluid_tracedSVG
+      ...GatsbyImageSharpFluid
     }
   }
 }
@@ -72,7 +67,7 @@ menu: allContentfulCoffee {
       category
       image {
         fixed(width: 50, height: 50) {
-          ...GatsbyContentfulFixed_tracedSVG
+          ...GatsbyContentfulFixed_withWebp
         }
       }
     }

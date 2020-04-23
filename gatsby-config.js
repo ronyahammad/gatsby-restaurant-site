@@ -20,14 +20,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-inline-svg`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `backgrounds`,
-        path: `${__dirname}/src/images/banner`, // wherever background images are stored
-      },
-    },
+    
     {
     resolve: `gatsby-source-contentful`,
       options: {

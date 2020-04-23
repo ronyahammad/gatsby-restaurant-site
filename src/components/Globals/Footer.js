@@ -1,19 +1,8 @@
 import React from "react";
- 
-import { Link,useStaticQuery,graphql } from "gatsby"
+import Logo from "../../images/footer_logo.png" 
+import { Link } from "gatsby"
 export default function Footer() {
-    const data=useStaticQuery( graphql`
-  {
     
-img: file(relativePath: { eq: "footer_logo.png" }) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-}
-}
-`)
   return (
     <footer className="footer py-3">
       <div className="footer_top">
@@ -23,48 +12,14 @@ img: file(relativePath: { eq: "footer_logo.png" }) {
                         <div className="footer_widget">
                             <div className="footer_logo">
                                 <a >
-                                    <img src={data.img.childImageSharp.fluid} alt=""/>
+                                    <img src={Logo} alt=""/>
                                 </a>
                             </div>
                             <p>5th flora, 700/D kings road, green <br/> lane New York-1782 <br/> 
                                 <a >+10 367 826 2567</a> <br/>
                                 <a >contact@carpenter.com</a>
                             </p>
-                            <p>
-
-
-
-                            </p>
-                            <div className="socail_links">
-                                <ul>
-                                    <li>
-                                        <a >
-                                            <i className="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a >
-                                            <i className="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a >
-                                            <i className="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a >
-                                            <i class="fa fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a >
-                                            <i className="fa fa-youtube-play"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
+                            
                         </div>
                     </div>
                     <div className="col-xl-4 col-md-6 col-lg-4 offset-xl-1">

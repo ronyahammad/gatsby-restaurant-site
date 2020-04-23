@@ -12,14 +12,14 @@ const Info=()=>{
 img5: file(relativePath: { eq: "about/big.png" }) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid_tracedSVG
+        ...GatsbyImageSharpFluid
       }
     }
 }
 img6: file(relativePath: { eq: "about/small.png" }) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid_tracedSVG
+        ...GatsbyImageSharpFluid
       }
     }
 }
@@ -67,3 +67,4 @@ img6: file(relativePath: { eq: "about/small.png" }) {
  
 
 export default Info
+
